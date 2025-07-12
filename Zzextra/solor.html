@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Solar System</title>
+  <style>
+    body {
+      background-color: black;
+      overflow: hidden;
+    }
+
+    .solar-system {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .sun {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: yellow;
+      box-shadow: 0 0 20px yellow;
+    }
+
+    .mercury, .venus, .earth, .mars, .jupiter, .saturn, .uranus, .neptune {
+      position: absolute;
+      border-radius: 50%;
+      animation: orbit linear infinite;
+    }
+
+    .mercury {
+      width: 20px;
+      height: 20px;
+      background-color: blue;
+      animation-duration: 10s;
+      transform: rotate(0deg) translateX(100px);
+    }
+
+    .earth {
+      width: 30px;
+      height: 30px;
+      background-color: aqua;
+      animation-duration: 15s;
+      transform: rotate(0deg) translateX(150px);
+    }
+
+    .moon {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: silver;
+      animation: orbitMoon 2s linear infinite;
+      top: -15px; /* Adjust position as needed */
+      left: 20px; /* Adjust position as needed */
+    }
+
+
+    /* Add styles for Jupiter, Saturn, Uranus, and Neptune */
+
+    @keyframes orbit {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes orbitMoon {
+      from {
+        transform: rotate(0deg) translateX(30px);
+      }
+      to {
+        transform: rotate(360deg) translateX(30px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="solar-system">
+    <div class="sun"></div>
+    <div class="mercury"></div>
+    <div class="venus"></div>
+    <div class="earth">
+      <div class="moon"></div>
+    </div>
+    <div class="mars"></div>
+    <div class="jupiter"></div>
+    <div class="saturn"></div>
+    <div class="uranus"></div>
+    <div class="neptune"></div>
+  </div>
+</body>
+</html>
