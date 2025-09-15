@@ -39,7 +39,7 @@ body {
 .site {
   width: 100%;
   max-width: var(--maxw);
-  margin: 0 auto;   /* ✅ centers horizontally */
+  margin: 0 auto;  
   background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
   border-radius: 18px;
   padding: 28px;
