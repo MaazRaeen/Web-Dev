@@ -50,7 +50,7 @@ resumeInput.addEventListener('change', e => {
 document.getElementById('sendMail').addEventListener('click', () => {
   const body = encodeURIComponent(document.getElementById('message').value || 'Hi Maaz,');
   const subject = encodeURIComponent('Contact from Portfolio Site');
-  window.location.href = `mailto:maaz@example.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:MaazRaeen42@gmail.com?subject=${subject}&body=${body}`;
 });
 
 // ====== Active nav highlighting (throttled) ======
