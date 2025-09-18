@@ -108,7 +108,7 @@ nav a.active{color:var(--accent);background:rgba(0,173,181,0.12)}
 /* Contact */
 .contact-list{display:flex;gap:24px;align-items:center}
 .socials{display:flex;gap:12px}
-.socials a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,0.02);text-decoration:none;color:var(--muted);transition:0.2s}
+.socials a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;background:rgba(249, 248, 248, 0.764);text-decoration:none;color:var(--muted);transition:0.2s}
 .socials a:hover{color:var(--text);background:var(--glass)}
 
 footer{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;color:var(--muted)}
