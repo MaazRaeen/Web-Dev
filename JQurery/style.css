@@ -1,6 +1,8 @@
-body{
-    background-color: black;
+.big-title{
+    font-size: 100px;
 }
 h1{
-    color: red;
+    font-size: 50px;
+    color: purple;
+    text-align: center;
 }
