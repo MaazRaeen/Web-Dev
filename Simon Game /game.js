@@ -1,10 +1,26 @@
-var buttonColors= ["red", "blue", "green", "yellow"];
+var buttonColours= ["red", "blue", "green", "yellow"];
+
 var gamePattern=[];
+var userClickPattern=[];
+
+$(".btn").click(function(){
+    var userChosenColour=$(this).attr("id");
+    userClickPattern.push(userChosenColour);
+    //playsound
+    playSound(userChosenColour);
+});
 function nextSequence(){
     var randomNumber=Math.random();
-    randomNumber=Math.floor(randomNumber*3)+1;
+    randomNumber=Math.floor(randomNumber*4);
 
-    var randomChosenNumber=buttonColors[randomNumber];
-    gamePattern.push(randomChosenNumber);
+    var randomChosenColour=buttonColours[randomNumber];
+    gamePattern.push(randomChosenColour);
+    $("#"+randomChosenColour).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+    
+    playSound(randomChosenColour);
 }
-nextSequence();
+
+function playSound(name){
+    var audio=new Audio("sounds/"+name+".mp3");
+    audio.play();
+}
