@@ -43,9 +43,6 @@ If you make a mistake — the game ends and restarts.
 6. If you click the wrong color, the game ends — press any key to restart.
 
 
-
-
-
 ---
 
 ## 📜 Code Overview
