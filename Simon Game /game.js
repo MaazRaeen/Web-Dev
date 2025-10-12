@@ -19,8 +19,25 @@ $(".btn").click(function(){
     //playsound
     playSound(userChosenColour);
     animatePress(userChosenColour);
+    checkAnswer(userClickPattern.length-1);
 });
+
+function checkAnswer(currentLevel){
+    if(gamePattern[currentLevel]===userClickPattern[currentLevel]){
+        console.log("Success");
+
+        if(userClickPattern.length===gamePattern.length){
+            setTimeout(function(){
+                nextSequence();
+            }, 1000);
+        }
+    }else{
+        console.log("wrong");
+    }
+}
+
 function nextSequence(){
+    userClickPattern=[];
     level++;
     $("#level-title").text("Level "+level);
     var randomNumber=Math.random();
