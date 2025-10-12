@@ -42,9 +42,7 @@ If you make a mistake — the game ends and restarts.
 5. Each time you succeed, the level increases.  
 6. If you click the wrong color, the game ends — press any key to restart.
 
----
 
-## 🧱 Project Structure
 
 
 
