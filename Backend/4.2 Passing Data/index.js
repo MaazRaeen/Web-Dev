@@ -7,14 +7,9 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  // const data={
-
-  // }
+  
   res.render("index.ejs");
 });
-
-
-
 app.post("/submit", (req, res) => {
     const numOFLetter=req.body["fName"].length+req.body["lName"].length;
     res.render("index.ejs", {numberOfLetters:numOFLetter});
