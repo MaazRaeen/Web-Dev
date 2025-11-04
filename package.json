@@ -19,6 +19,8 @@
   "description": "",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
+    "ejs": "^3.1.10",
+    "express.js": "^1.0.0",
     "prompt-sync": "^4.2.0"
   },
   "devDependencies": {

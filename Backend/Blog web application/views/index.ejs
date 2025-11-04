@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include("partial/header") %>
+
+  <main class="container">
+    <h1>📝 My Blog</h1>
+
+    <!-- Post Creation Form -->
+    <form action="/create" method="POST" class="post-form">
+      <input type="text" name="title" placeholder="Enter post title" required>
+      <textarea name="content" placeholder="Write your content..." required></textarea>
+      <button type="submit">Add Post</button>
+    </form>
+
+    <hr>
+
+    <!-- Post Viewing + Edit/Delete Section -->
+    <h2>All Posts</h2>
+    <div class="posts">
+  <% if (posts.length > 0) { %>
+    <% posts.forEach((post, index) => { %>
+      <div class="post-card">
+        <h2><%= post.title %></h2>
+        <p><%= post.content %></p>
+        <p class="date"> <%= post.date %></p>
+
+        <form action="/delete/<%= index %>" method="POST">
+          <button class="delete-btn">Delete</button>
+        </form>
+
+        <a href="/edit/<%= index %>" class="edit-btn">Edit</a>
+      </div>
+    <% }) %>
+  <% } else { %>
+    <p>No posts yet. Create your first one!</p>
+  <% } %>
+</div>
+
+    </div>
+  </main>
+
+  <%- include("partial/footer") %>
+</body>
+</html>
