@@ -1,0 +1,38 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+env/
+
+# Java
+*.class
+target/
+
+# Build outputs
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+
+# Misc
+.cache/
