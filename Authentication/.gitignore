@@ -1,40 +1,31 @@
-# Compiled Java files
-*.class
+# Dependencies
+node_modules/
 
-# Build directories
-target/
-out/
+# Environment
+.env
+.env.*
+
+# Build
+dist/
 build/
-
-# IntelliJ IDEA
-.idea/
-*.iml
-
-# Eclipse
-.classpath
-.project
-.settings/
-
-# VS Code
-.vscode/
-
-# OS files
-.DS_Store
-Thumbs.db
 
 # Logs
 *.log
 
-# Environment / secrets
-.env
-.env.*
+# OS
+.DS_Store
+Thumbs.db
 
-# Temporary files
-*.tmp
-*.temp
+# IDE
+.vscode/
+.idea/
 
-# Maven
-.mvn/
+# Cache
+.cache/
+.parcel-cache/
+.vite/
+.next/
+.nuxt/
 
-# Gradle
-.gradle/
+# Coverage
+coverage/
